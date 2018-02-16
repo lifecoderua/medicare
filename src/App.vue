@@ -14,6 +14,7 @@
           value="true"
           v-for="(item, i) in items"
           :key="i"
+          @click="$router.push(item.link)"
         >
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
@@ -78,12 +79,19 @@ export default {
       fixed: false,
       items: [{
         icon: 'bubble_chart',
-        title: 'Inspire'
-      }],
+        title: 'Home',
+        link: '/'
+      },
+      {
+        icon: 'edit',
+        title: 'Patients',
+        link: 'Patient'
+      }
+      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Medicare'
     }
   },
   name: 'App'
