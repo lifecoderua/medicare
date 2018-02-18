@@ -85,7 +85,7 @@ export default {
       {
         icon: 'edit',
         title: 'Patients',
-        link: 'Patient'
+        link: {name: 'Patients'}
       }
       ],
       miniVariant: false,

@@ -1,23 +1,109 @@
 <template>
-  <v-container fluid>
+  <v-container fluid grid-list-lg>
     <v-slide-y-transition mode="out-in">
       <v-layout row>
         <v-flex>
-          <v-list two-line>
-            <template v-for="(item, index) in items">
-              <v-subheader v-if="item.header" :key="item.header">{{ item.header }}</v-subheader>
-              <v-divider v-else-if="item.divider" :inset="item.inset" :key="index"></v-divider>
-              <v-list-tile avatar v-else :key="item.title">
-                <v-list-tile-action>
-                  <v-icon>face</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title v-html="item.title"></v-list-tile-title>
-                  <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </template>
-          </v-list>
+          <h1>Mike Apike</h1>
+
+          <v-container fluid>
+            <v-layout row>
+              <v-flex xs-12>
+                <v-card>
+                  <v-card-title primary-title>
+                    <div>
+                      <h3 class="headline mb-0">BIO</h3>
+                      <p>8 лет — 1993 г.р.</p>
+                      <p>14кг — обновлено 3 месяца назад</p>
+                      <p>Аллергия: Нет</p>
+                      <hr>
+                      <p>Не спит</p>
+                      <p>Теряет волю при звуках флейты</p>
+                    </div>
+                  </v-card-title>
+                  <v-card-actions>
+                    <v-btn flat color="orange">Share</v-btn>
+                    <v-btn flat color="orange">Explore</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+
+          <h2>Карта</h2>
+
+          <v-container fluid>
+            <v-layout row>
+              <v-flex xs-12>
+                <v-card>
+                  <v-card-title primary-title>
+                    <div>
+                      <h3 class="headline mb-0">ОТКРЫТО<span class="subheading"> — 5 дней назад</span></h3>
+                      <h4>TODO: поделить пополам для рецепта/списка прописанных медикаментов?</h4>
+                      <p>Температура 40.1</p>
+                      <p>Насморк</p>
+                      <p>Кашель</p>
+                      <hr>
+                      <h3 class="subheading">2 дня спустя</h3>
+                      <p>Кашель жесткий</p>
+                      <p>Хрипы слева</p>
+                    </div>
+                  </v-card-title>
+                  <v-card-actions>
+                    <v-btn flat color="orange">Подробнее</v-btn>
+                    <v-btn flat color="orange">Редактировать</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+
+          <v-container fluid>
+            <v-layout row>
+              <v-flex xs-12>
+                <v-card>
+                  <v-card-title primary-title>
+                    <div>
+                      <h3 class="headline mb-0">Воспаление хитрости 3ей степени<span class="subheading"> — 3 месяца назад</span></h3>
+                      <p>Температура 36.6</p>
+                      <p>Насморк</p>
+                      <p>Кашель</p>
+                      <hr>
+                      <h3 class="subheading">3 дня спустя</h3>
+                      <p>Насморк прошел</p>
+                      <p>Кашель прошел</p>
+                      <h3>Диагноз: воспаление хитрости 3ей степени</h3>
+                    </div>
+                  </v-card-title>
+                  <v-card-actions>
+                    <v-btn flat color="orange">Подробнее</v-btn>
+                    <v-btn flat color="orange">Редактировать</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+
+          <v-container fluid>
+            <v-layout row>
+              <v-flex xs-12>
+                <v-card>
+                  <v-card-title primary-title>
+                    <div>
+                      <h3 class="headline mb-0">? кашель<span class="subheading"> — 5 месяцев назад</span></h3>
+                      <p>Температура 38.1</p>
+                      <p>Кашель</p>
+                      <p>Боль в горле</p>
+                    </div>
+                  </v-card-title>
+                  <v-card-actions>
+                    <v-btn flat color="orange">Подробнее</v-btn>
+                    <v-btn flat color="orange">Редактировать</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+
         </v-flex>
       </v-layout>
     </v-slide-y-transition>
@@ -35,12 +121,9 @@ export default {
   data () {
     return {
       items: [
-        { header: 'Today' },
-        { title: 'Brunch this weekend?', subtitle: "<span class='text--primary'>Ali Connors</span> &mdash; I'll be in your neighborhood doing errands this weekend. Do you want to hang out?" },
-        { divider: true, inset: true },
-        { title: 'Summer BBQ <span class="grey--text text--lighten-1">4</span>', subtitle: "<span class='text--primary'>to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend." },
-        { divider: true, inset: true },
-        { title: 'Oui oui', subtitle: "<span class='text--primary'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have you ever been?" }
+        { title: 'Mike Apike', subtitle: '8 years' },
+        { title: 'Roy Muroy', subtitle: '4 years' },
+        { title: 'Klei Wei', subtitle: '5 years' }
       ]
     }
   }
