@@ -12,6 +12,7 @@
                   <v-card-title primary-title>
                     <div>
                       <h3 class="headline mb-0">BIO</h3>
+                      aa- <i class="material-icons">&#xE2CC;</i> -bb
                       <p>8 лет — 1993 г.р.</p>
                       <p>14кг — обновлено 3 месяца назад</p>
                       <p>Аллергия: Нет</p>

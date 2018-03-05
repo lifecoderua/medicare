@@ -83,9 +83,14 @@ export default {
         link: '/'
       },
       {
-        icon: 'edit',
+        icon: 'folder_shared',
         title: 'Patients',
         link: {name: 'Patients'}
+      },
+      {
+        icon: 'create_new_folder',
+        title: 'Add Patient',
+        link: {name: 'PatientAdd'}
       }
       ],
       miniVariant: false,
