@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import FrontPage from '@/components/FrontPage'
 import Patients from '@/components/patient/Patient-list'
 import Patient from '@/components/patient/Patient'
 import PatientForm from '@/components/patient/Patient-form'
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'FrontPage',
+      component: FrontPage
     },
     {
       path: '/patients',

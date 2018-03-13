@@ -19,6 +19,7 @@ import {
   VTextField,
   VMenu,
   VDatePicker,
+  VDataTable,
   transitions
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
@@ -39,6 +40,7 @@ Vue.use(Vuetify, {
     VTextField,
     VMenu,
     VDatePicker,
+    VDataTable,
     transitions
   }
 })
