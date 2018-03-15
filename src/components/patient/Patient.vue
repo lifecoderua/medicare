@@ -12,7 +12,6 @@
                   <v-card-title primary-title>
                     <div>
                       <h3 class="headline mb-0">BIO</h3>
-                      aa- <i class="material-icons">&#xE2CC;</i> -bb
                       <p>8 лет — 1993 г.р.</p>
                       <p>14кг — обновлено 3 месяца назад</p>
                       <p>Аллергия: Нет</p>
@@ -30,7 +29,8 @@
             </v-layout>
           </v-container>
 
-          <h2>Карта</h2>
+          <story-list></story-list>
+          <!-- <h2>Карта</h2>
 
           <v-container fluid>
             <v-layout row>
@@ -103,7 +103,7 @@
                 </v-card>
               </v-flex>
             </v-layout>
-          </v-container>
+          </v-container> -->
 
         </v-flex>
       </v-layout>
@@ -118,7 +118,12 @@
 
 
 <script>
+import StoryList from '@/components/story/Story-list'
+
 export default {
+  components: {
+    'story-list': StoryList,
+  },
   data () {
     return {
       items: [
